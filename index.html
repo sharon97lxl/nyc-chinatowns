@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYC's Chinatowns</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+    <div id="map-header">
+        <h1>NYC Chinatown Map</h1>
+        <p id="header-description">Owing to the long history of Chinese migration to New York City, the community has established several Chinatowns across the city. This map spotlights the three major Chinatowns in Manhattan, Brooklyn, and Queens, and the distinctive characteristics of each area. <br></br> Click on each Chinatown to learn more about each. </p>
+            <div id="map-controls">
+            <p>Jump to:</p>
+            <label><input type="radio" name="neighborhood" value="chinatownman"> Manhattan</label>
+            <label><input type="radio" name="neighborhood" value="chinatownbrook"> Brooklyn</label>
+            <label><input type="radio" name="neighborhood" value="chinatownflush"> Queens</label>
+        </div>
+      </div>
+    <div id="mapcontainer"></div>
+    <script src="chinatownpolygons.js"></script>
+    <script src="map.js"></script>
+
+</body>
+
+</html>
